@@ -1,0 +1,21 @@
+git config --global user.name Adeel
+git config --global user.email "aadeelraza21@gmail.com"
+touch .gitignore                                                   # make an empty file by touch in which all large things are put this file is avoid
+git init                                                           # initialized your project and made a folder name .git
+git add .                                                          # send all content in staging area means repository 
+git commit -m "Initial commit"                                     # when u commit so that means you took the snapshot
+git status                                                         # when you got that message (working tree clean) that means ideally you are ready to publish your project
+                                                                   # we would talk to gitbash to enter our project in github first of all click ssh and then copy the link in github
+                                                                   go to gitbash paste there
+git remote add origin git@github.com:Adeel-qazi/UserWebsite.git    # our project is uploaded into that website
+git push -u origin master                                          # if repository is private so don't push your porject
+                                                                     go to your account's setting and click ssh and gps option click the new ssh key. giving the access form computer to github repository
+                                                                     i have to generate ssh key. go to goole how to generate ssh key then copy that command and paste the command in gitbash.
+ssh-keygen -t ed25519 -c "aadeelraza21@gmail.com"                  # generate the ssh key to give access from computer to github. your public key has been saved in /c/Users/HP/.ssh/id-ed25519.pub  
+cat /c/Users/HP/.ssh/id-ed25519.pub                                # copy the generating key and paste ssh and gps keys
+                                                                     after generting the public key
+git push origin master                                             # push the project successfully
+                                                                     type three command for updating a new file in project first of all saved a file in local folder project 
+git add .                                                           # send all content in staging area means repository 
+git commit -m "Added cheatsheet"                                    # when u commit so that means you took the snapshot
+git push origin master                                               # if repository is private so don't push your porject. converting private repository into public repository goto setting(project level) then go to danger zone for making public repository
